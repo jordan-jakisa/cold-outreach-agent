@@ -1,11 +1,15 @@
+
 import streamlit as st
 import pandas as pd
 from dotenv import load_dotenv
 from main import send_email, generate_email_body
+from sidebar import sidebar
 
 load_dotenv()
 
-st.header("Cold email outreach generator")
+sidebar()
+
+st.title("📨 Cold email outreach generator")
 
 uploaded_file = st.file_uploader(label="Choose your csv file", type=['csv'],help="Please upload a csv file with the following columns: name, email, person_descritption")
 
