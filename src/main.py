@@ -6,6 +6,12 @@ from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
+# Replace this email with your own  email
+USER_EMAIL = "jordan.jakisa@gmail.com"
+# Replace this password with your own email password
+# To learn how to get your app password, visit https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237
+USER_PASSWORD = os.getenv("EMAIL_PASSWORD")
+
 
 def send_email(recipient, subject, body):
     with smtplib.SMTP(host='smtp.gmail.com', port=587) as session:
@@ -15,7 +21,7 @@ def send_email(recipient, subject, body):
         msg['From'] = 'jordan.jakisa@gmail.com'
         msg['To'] = recipient
         session.starttls()
-        session.login(user="jordan.jakisa@gmail.com", password=os.getenv("EMAIL_PASSWORD"))
+        session.login(user=USER_EMAIL, password=USER_PASSWORD)
         session.sendmail(from_addr="jordan.jakisa@gmail.com", to_addrs=recipient, msg=body)
         session.send_message(msg=msg)
 
