@@ -1,4 +1,4 @@
-# Cold outreac email agent
+# 📨 Cold email outreach AI agent
 
 This is a simple cold outreach email agent designed for sales people to generate sales emails based on a particular product 
 and a particular user profile, pain points and description, it uses GPT-3.5 to generate custom emails for the product, tailored 
