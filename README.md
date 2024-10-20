@@ -6,10 +6,7 @@ to each particular target, and then sends them to the people listed in a csv fil
 
 ## Here is an explanation of how it works and a demo 
 
-https://www.loom.com/share/987d1aee88fc42a8bec790f77ca4b0ba?sid=1aa43dcf-2ff0-43f1-95ea-b8b8d25fe2ef
-
-
-
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/7t_dvpafawg/0.jpg)](https://www.youtube.com/watch?v=7t_dvpafawg)
 ## Tech used
 - [LangChain](https://www.langchain.com/)
 - [OpenAI](https://platform.openai.com/docs/models)
