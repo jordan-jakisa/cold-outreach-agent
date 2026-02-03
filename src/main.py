@@ -1,13 +1,17 @@
 import os
 import smtplib
+from dotenv import load_dotenv
 from email.message import EmailMessage
 
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain_openai import ChatOpenAI
 
+
+_ = load_dotenv()
+
 # Replace this email with your own  email
-USER_EMAIL = "jordan.jakisa@gmail.com"
+USER_EMAIL = os.getenv("USER_EMAIL")
 # Replace this password with your own email password
 # To learn how to get your app password, visit https://knowledge.workspace.google.com/kb/how-to-create-app-passwords-000009237
 USER_PASSWORD = os.getenv("EMAIL_PASSWORD")
